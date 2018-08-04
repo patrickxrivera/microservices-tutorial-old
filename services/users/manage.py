@@ -11,6 +11,7 @@ cli = FlaskGroup(create_app=create_app)  # new
 
 @cli.command()
 def recreate_db():
+    """Resets the database"""
     db.drop_all()
     db.create_all()
     db.session.commit()

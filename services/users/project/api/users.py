@@ -67,6 +67,8 @@ def get_single_user(user_id):
 @users_blueprint.route('/users', methods=['GET'])
 def get_all_users():
     """Get all users"""
+    users = User.query.all()
+    print(users)
     try:
         response_object = {
             'status': 'success',
