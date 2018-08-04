@@ -2,7 +2,7 @@
 
 import os
 from flask import Flask, jsonify
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy 
 
 # instantiate the app
 app = Flask(__name__)
